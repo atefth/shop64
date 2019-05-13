@@ -1,5 +1,6 @@
 set :stage, :production
 set :rails_env, :production
+set :deploy_to, "/home/ec2-user/apps/shop64.co"
 set :branch, 'master'
 
 set :puma_user, fetch(:user)

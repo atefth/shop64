@@ -29,10 +29,10 @@ set :rbenv_roles, :all
 # set :bundle_gemfile, "#{current_path}/Gemfile"
 # set :bundle_path, "#{shared_path}/.bundle"
 
-set :bundle_path, "#{fetch(:rbenv_path)}/versions/#{fetch(:rbenv_ruby)}/lib/ruby/gems/#{fetch(:rbenv_ruby)}"
-set :bundle_path, "#{fetch(:rbenv_path)}/versions/#{fetch(:rbenv_ruby)}/lib/ruby/gems/2.5.0" if fetch(:rbenv_ruby).eql?("2.5.1")
-set :bundle_without, %w{development test}.join(" ")
-set :bundle_flags, "--deployment --quiet"
+# set :bundle_path, "#{fetch(:rbenv_path)}/versions/#{fetch(:rbenv_ruby)}/lib/ruby/gems/#{fetch(:rbenv_ruby)}"
+# set :bundle_path, "#{fetch(:rbenv_path)}/versions/#{fetch(:rbenv_ruby)}/lib/ruby/gems/2.5.0" if fetch(:rbenv_ruby).eql?("2.5.1")
+# set :bundle_without, %w{development test}.join(" ")
+# set :bundle_flags, "--deployment --quiet"
 
 namespace :puma do
   desc "Create Directories for Puma Pids and Socket"
